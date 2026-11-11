@@ -1,0 +1,26 @@
+# Sanitized log of a live weekly rebalance (2026-11-09, week 2026-W46).
+# Redacted: ticker symbols, ranking scores, account values, order quantities and amounts,
+# broker order IDs, pool sizes, and the contents of the sector, challenger, and regime lines.
+# Module paths are shortened and one internal label is generalized to "dark challenger".
+# Timestamps and the remaining message text are as logged.
+
+08:45:00 | INFO    | execution_alpaca:__init__ - Alpaca executor initialized (LIVE)
+08:45:03 | INFO    | momentum_rebalancer:screen_candidates - Screen: 3729 candidate symbols
+08:46:37 | INFO    | momentum_rebalancer:screen_candidates - Screen: [n] symbols pass liquidity/price filters
+08:46:56 | INFO    | momentum_rebalancer:fetch_deep_closes - Deep fetch: [n] days x [n] symbols
+08:46:56 | INFO    | momentum_rebalancer:run - sector breakdown: [redacted]
+08:46:56 | INFO    | momentum_rebalancer:run - dark challenger picks: [15 symbols redacted] | overlap with live [n]/15
+08:46:57 | INFO    | momentum_rebalancer:run - regime (info only): [redacted]
+08:46:57 | INFO    | momentum_rebalancer:run - week=2026-W46 equity=[redacted] universe=[n] held=[15 symbols redacted]
+08:46:57 | INFO    | momentum_rebalancer:run - picks: [15 symbols and scores redacted]
+08:46:57 | INFO    | momentum_rebalancer:run - plan: SELL [3 symbols redacted] | BUY [3 symbols and amounts redacted]
+08:46:57 | INFO    | execution_alpaca:close_position - Closed position in [symbol]
+08:46:57 | INFO    | momentum_rebalancer:_sell -   SOLD [symbol]
+08:46:57 | INFO    | execution_alpaca:close_position - Closed position in [symbol]
+08:46:57 | INFO    | momentum_rebalancer:_sell -   SOLD [symbol]
+08:46:57 | INFO    | execution_alpaca:close_position - Closed position in [symbol]
+08:46:57 | INFO    | momentum_rebalancer:_sell -   SOLD [symbol]
+08:47:03 | INFO    | execution_alpaca:place_market_order - Market buy [qty] [symbol] -> [order id]
+08:47:03 | INFO    | execution_alpaca:place_market_order - Market buy [qty] [symbol] -> [order id]
+08:47:03 | INFO    | execution_alpaca:place_market_order - Market buy [qty] [symbol] -> [order id]
+08:47:04 | INFO    | momentum_rebalancer:run - Rebalance 2026-W46 complete: 3 sells, 3 buys
